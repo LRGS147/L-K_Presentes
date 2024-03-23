@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Presentes</title>
+    <link rel="icon" type="image/x-icon" href="./src/img/KL.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section>
+    <p>
+      <img src="./src/img/KL.png" alt="Girl in a jacket" style="width:100px;height:100px;">
+    </p>
+    <h1>Escolha o presente</h1>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank">
+          <img src="./src/img/abridor de lata.jpg" alt="abridor_de_lata" width="150px" height="180px"> 
+        </a>
+        <form id="giftForm" method="post" action="./api/salvar.php">
+          <label class="texts" for="name">Seu Nome</label><br>
+          <input class="escl" type="text" id="name" name="name"><br>
+          <label class="texts" for="gift">Presente</label><br>
+          <select class="escl" id="gift" name="gift">
+            <option value="abridor_de_lata">Abridor de lata</option>
+          </select><br>
+          <input class="button" type="submit" value="Enviar" onclick="markSelected(this)">
+        </form>
+      </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" >
+            <img src="./src/img/Açucareiro.jpg" alt="Açucareiro" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Açucareiro">Açucareiro</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar" onclick="markSelected(this)">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank">
+            <img src="./src/img/Afiador de faca.jpg" alt="afiador_de_faca" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Afiador_de_faca">Afiador de faca</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank">
+            <img src="./src/img/abaju.jpg" alt="abaju" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="abajur">Abajur</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank">
+            <img src="./src/img/air fryer.webp" alt="air_fryer" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Air_Fryer">Air Fryer</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank">
+            <img src="./src/img/almofadas.jpg" alt="almofadas" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Almofadas">Almofadas</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank">
+            <img src="./src/img/aspirador.jpg" alt="aspirador" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Aspirador">Aspirador</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank">
+            <img src="./src/img/travessa de vidro.jpg" alt="travessa_de_vidro" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Travessa_de_Vidro">Travessa de Vidro</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank">
+            <img src="./src/img/bandeijas.jpg" alt="bandeijas" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Bandeja">Bandeja</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank">
+            <img src="./src/img/batedeira.jpg" alt="batedeira" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Batedeira">Batedeira</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank">
+            <img src="./src/img/chaleira eletrica.webp" alt="chaleira_eletrica" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Chaleira_eletrica">Chaleira eletrica</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank">
+            <img src="./src/img/churrasqueira eletrica.jpeg" alt="churrasqueira_eletrica" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Churrasqueira_eletrica">Churrasqueira eletrica</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" >
+            <img src="./src/img/cobertor.webp" alt="cobertor" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Cobertor">Cobertor</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" >
+            <img src="./src/img/colher de pau.webp" alt="colher_de_pau" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Colher_de_pau">Colher de pau</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" >
+            <img src="./src/img/colheres de silicone.jpg" alt="colheres_de_silicone" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Colheres_de_silicone">Colheres de silicone</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" >
+            <img src="./src/img/descanso de panela.jpeg" alt="descanso_de_panela" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Descanso_de_panela">Descanso de panela</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" >
+            <img src="./src/img/tigela de vidro.jpg" alt="tigela_de_vidro" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Tigela_de_vidro">Tigela de vidro</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" >
+            <img src="./src/img/escorredor de louças.webp" alt="escorredor_de_louças" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Escorredor_de_louças">Escorredor de louças</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" >
+            <img src="./src/img/escorredor.webp" alt="escorredor" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Escorredor">Escorredor</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank">
+            <img src="./src/img/frigideira.webp" alt="frigideira" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Frigideira">Frigideira</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank">
+            <img src="./src/img/jogo de copos.webp" alt="jogo_de_copos" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Jogo_de_Copos">Jogo de Copos</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/panelas para  indução.webp" alt="Panelas_para_Indução" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Panelas_para_Indução">Panelas para Indução</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/kit banheiro.webp" alt="kit_banheiro" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Kit_Banheiro">Kit Banheiro</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/kit de ferramneta.webp" alt="kit_de_ferramneta" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Kit_de_Ferramenta">Kit de Ferramenta</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/liquidificador.jpg" alt="liquidificador" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Liquidificador">Liquidificador</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/lixeira.jpg" alt="lixeira" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Lixeira">Lixeira</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/mop giratorio.webp" alt="mop_giratorio" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Mop Giratorio">Mop Giratorio</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/panela de pressao.webp" alt="panela_de_pressao" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Panela_de_Pressão">Panela de Pressão</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/panela de arroz.webp" alt="panela_de_arroz" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Panela_de_Arroz">Panela de Arroz</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/porta tempeiros.webp" alt="porta_tempeiros" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Porta_Temperos">Porta Temperos</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/pote de sobremesa.jpg" alt="pote_de_sobremesa" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Pote_de_Sobremesa">Pote de Sobremesa</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/potes hermeticos.jpg" alt="potes_hermeticos" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Potes_Hermeticos">Potes Hermeticos</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/pratos.jpg" alt="pratos" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Pratos">Pratos</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/ralador.jpg" alt="ralador" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Ralador">Ralador</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/saladeira.webp" alt="saladeira" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Saladeira">Saladeira</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/tábua.jpg" alt="tábua" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="tábua_de_carne">Tábua de carne</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/taças.webp" alt="taças" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Taças">Taças</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/talheres.webp" alt="talheres" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Talheres">Talheres</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery" >
+          <a target="_blank" >
+            <img src="./src/img/toalha de banho e rosto.jpg" alt="toalha_de_banho_e_rosto" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Toalha_Banho_e_Rosto">Toalha Banho e Rosto</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" >
+            <img src="./src/img/xicaras.webp" alt="xicaras" width="150px" height="180px">
+          </a>
+          <form id="giftForm" method="post" action="./api/salvar.php">
+            <label class="texts" for="name">Seu Nome</label><br>
+            <input class="escl" type="text" id="name" name="name"><br>
+            <label class="texts" for="gift">Presente</label><br>
+            <select class="escl" id="gift" name="gift">
+              <option value="Xicaras">Xicaras</option>
+            </select><br>
+            <input class="button" type="submit" value="Enviar">
+          </form>
+        </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
